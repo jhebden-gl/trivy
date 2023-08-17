@@ -36,6 +36,7 @@ trivy sbom [flags] SBOM_PATH
       --ignore-policy string        specify the Rego file path to evaluate each vulnerability
       --ignore-status strings       comma-separated list of vulnerability status to ignore (unknown,not_affected,affected,fixed,under_investigation,will_not_fix,fix_deferred,end_of_life)
       --ignore-unfixed              display only fixed vulnerabilities
+      --ignore-wontfix              ignore vulnerabilities where the vendor has determined no fix is required
       --ignorefile string           specify .trivyignore file (default ".trivyignore")
       --java-db-repository string   OCI repository to retrieve trivy-java-db from (default "ghcr.io/aquasecurity/trivy-java-db")
       --list-all-pkgs               enabling the option will output all packages regardless of vulnerability

@@ -40,6 +40,7 @@ trivy repository [flags] REPO_URL
       --ignore-policy string              specify the Rego file path to evaluate each vulnerability
       --ignore-status strings             comma-separated list of vulnerability status to ignore (unknown,not_affected,affected,fixed,under_investigation,will_not_fix,fix_deferred,end_of_life)
       --ignore-unfixed                    display only fixed vulnerabilities
+      --ignore-wontfix                    ignore vulnerabilities where the vendor has determined no fix is required
       --ignored-licenses strings          specify a list of license to ignore
       --ignorefile string                 specify .trivyignore file (default ".trivyignore")
       --include-dev-deps                  include development dependencies in the report (supported: npm, yarn)
