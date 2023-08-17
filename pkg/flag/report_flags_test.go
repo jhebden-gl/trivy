@@ -23,6 +23,7 @@ func TestReportFlagGroup_ToOptions(t *testing.T) {
 		dependencyTree bool
 		listAllPkgs    bool
 		ignoreUnfixed  bool
+		ignoreWontfix  bool
 		ignoreFile     string
 		exitCode       int
 		exitOnEOSL     bool
@@ -183,6 +184,7 @@ func TestReportFlagGroup_ToOptions(t *testing.T) {
 			viper.Set(flag.ListAllPkgsFlag.ConfigName, tt.fields.listAllPkgs)
 			viper.Set(flag.IgnoreFileFlag.ConfigName, tt.fields.ignoreFile)
 			viper.Set(flag.IgnoreUnfixedFlag.ConfigName, tt.fields.ignoreUnfixed)
+			viper.Set(flag.IgnoreWontfixFlag.ConfigName, tt.fields.ignoreWontfix)
 			viper.Set(flag.IgnorePolicyFlag.ConfigName, tt.fields.ignorePolicy)
 			viper.Set(flag.ExitCodeFlag.ConfigName, tt.fields.exitCode)
 			viper.Set(flag.ExitOnEOLFlag.ConfigName, tt.fields.exitOnEOSL)
